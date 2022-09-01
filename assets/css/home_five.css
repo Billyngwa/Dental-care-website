@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    cursor:pointer;
+}
+/* ************* styling the footer links **************** */
+ul li, li ul, li{
+    list-style-type:none
+}
+li a{
+    text-decoration:none;
+}
+.footer_items li a{
+    color:var(--principal_color);
+}
+.footer_items li a{
+    color:var(--principal_color);
+}
+/* .footer_items li a:visited{
+    color:white;
+} */
+.footer_items li a:hover{  /* when you hover over the anchor tag the color should be aqua */
+    color:var(--primary_color);
+}
+:root{
+    --primary_color: #21cdc0;
+    --footer_color:#0e204d;
+    --principal_color:white;
+    --color-primary: #2e279d;
+    --color-primary-07: rgba(46, 39, 157, 0.07);
+    --color-primary-10: rgba(46, 39, 157, 0.1);
+    --color-primary-20: rgba(46, 39, 157, 0.2);
+    --color-secondary: #499afa;
+    --color-secondary-10: rgba(73, 154, 250, 0.1);
+    --color-tertiary: #21cdc0;
+    --color-fourth: #213360;
+    --color-heading: #0e204d;
+    --color-heading-07: rgba(14, 32, 77, 0.07);
+    --color-heading-10: rgba(14, 32, 77, 0.1);
+    --color-heading-50: rgba(14, 32, 77, 0.5);
+    --color-body: #4d6581;
+    --color-grey: #f3f5f8;
+    --color-white: #fff;
+    --color-black: #000000;
+    --font-inter: 'Inter', sans-serif;
+    --font-lora: 'Lora', serif;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif:sans-serif;
+}
+.footer-section{
+  background-color: var(--color-heading);
+}
+.footer--flex{
+    margin-left:7.5%;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    /* margin:0px 0px 0px 50px #0c083f8a*/
+}
+.info_list li, .footer_items .seeva_descriptor, .footer_items .form_input {
+    margin:20px 0px 0px 0px;
+    color:var(--principal_color);
+    font-size: 18px;
+    font-family:times 'Times New Roman', Times, serif
+}
+.seeva_descriptor{
+    line-height: 30px;
+}
+.info_list .fa-solid, .footer--header .fa-solid{ /* style for the fontawesome icons at the footer */
+    color: var(--primary_color);
+    font-size: 16px;
+    margin: 0px 10px 0px 0px;
+}
+.info_list{ /* style for the info list at footer. (location, email, and phone) */
+    margin:35px 0px 0px 0px
+}
+.footer_items .footer--heading{
+    font-size: 28px;
+    color:var(--principal_color)
+}
+hr{
+    border-radius: 2px solid rgba(41, 37, 37, 0.342);
+    margin-left:7.5%;
+    width: 85%;
+    margin-top: 90px;
+}
+.copyright{ /* style for the copyright */
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 20px;
+    font-size:18px;
+    color: var(--principal_color);
+}
+.form_input{ /* style for the form at footer */
+    border: 2px solid var(--principal_color);
+    border-radius: 50px;
+    height: 60px;
+}
+input[type="email"]{ /* style for the email input */
+   padding:0px 0px 0px 20px;
+   border: none;
+   background-color: transparent;
+   margin:20px 0px 0px 0px;
+   font-size: 16px;
+
+}
+.email_button i{ /* style for the icon after the email button */
+    font-size: 20px;
+    color:var(--principal_color); 
+}
+.email_button{ /* style for the email button */
+    margin:0px 20px 0px 0px;
+    background-color: transparent;
+    border:none;
+}
+.below_form{ /* style for the below email */
+    margin:40px 0px 0px 0px;
+    color: var(--principal_color);
+}
+input[type="email"]::placeholder { /* style for the email placeholder */
+    color:var(--principal_color);
+  }
+  /* *****************end for footer ****************** */
+  /* header */
+  .ohmap{   /* style for the top header */
+    display:flex;
+    justify-content: space-between;
+  }
+  .emptyheader_div{  /* style for the empty divs in the top header*/
+    width: 7%;
+    border-right:1px solid rgb(134, 130, 130);
+    border-bottom:1px solid rgb(134, 130, 130); ;
+  }
+ .ohmap .ohmap--item{  /* style for the 3 middle div in the top header*/
+    width:85%;
+    border-right:1px solid rgb(134, 130, 130);
+    border-bottom:1px solid rgb(134, 130, 130); ;
+    display: inherit;
+    align-items: center;
+    height: 0px;
+    padding: 70px;
+}
+  .heading--info{
+    margin-left: 10px;
+}
+/* start of style for the nav bar */
+.seeva_line{ /* style to display contents in the div with logo, nav and botton*/
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin:40px 0px 0px 0px;
+    padding: 20px;
+    position: sticky;
+    top:0;
+    background-color: var(--principal_color);
+}
+.nav_bar{ /* style to display contents in the nav */
+    display: flex;
+    justify-content: space-between;
+}
+.home_relative{ /* style for the any relative element in nav bar */
+    position: relative;
+}
+.home_absolute{ /* style for the any absolute element in nav bar */
+    position: absolute;
+    display:none;
+    z-index:2;
+    background-color: white;
+    width: 10vw;
+}
+.home_relative:hover .home_absolute{  /* style for hover on relative element display absolute element  */
+    display:block;
+    background-color:var(--principal_color);
+}
+
+.home_relative:hover, .page_home_relative:hover, .nav_list a:hover{  /* style for hover property  in the dropdown relative */
+    color:var(--primary_color);
+}
+.home_navigation .nav_list_home, .page_home_navigation .nav_list_home, 
+.service_home_navigtion .nav_list_home{ /* style for margin of each link in the dropdown */
+    margin:40px 0px 0px 0px;
+}
+.home_relative, .page_home_relative, .nav_list{  /* style for margins of each relative element in nav bar */
+    margin:0px 0px 0px 20px;
+    cursor: pointer;
+    color: var(--footer_color);
+}
+.nav_list_home:hover { /* style for each list element in the dropdown */
+    background-color: var(--primary_color);
+}
+.home_navigation{  /* style to set top margin of ul in the dropdown */
+    margin:70px 0px 0px 0px;
+}
+/* style for the service link in nav under pages */
+
+.service_tag:hover .service_home_navigation{
+    display: block;
+    left:100px;
+}
+.service_home_navigation{
+    display: none;
+    position:absolute;
+    z-index: 2;
+    background-color: var(--principal_color);
+}
+.service_tag{
+    display: none;
+}
+
+.page_home_relative:hover .service_tag{ /*when you hover  on pages +, services + should display */
+    display: block;
+}
+
+/*end of style for the service link in nav */
+
+/* .navigation{
+    display:flex;
+} */
+.get_a_quote{ /* style for quote button in header */
+    border: none;
+    border-radius: 50px;
+    background-color: var(--primary_color);
+    font-size: 20px;
+    padding: 20px;
+    color: var(--principal_color);
+}
+.get_a_quote:hover{ /* style to activate a state when you hover on quote button */
+    background-color: var(--footer_color);
+}
+.page_home_relative{
+    position:relative;
+}
+.page_home_navigation{
+    position:absolute;
+    z-index:1;
+    display:none;
+    background-color: var(--principal_color);
+}
+.page_home_relative:hover .page_home_navigation{ /*when you hover  on services +  a dropdown to the right should display */
+display: block;
+}
+.explore_more{
+    border: 1px solid var(--principal_color);
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 20px;
+    color: var(--principal_color);
+    margin:20px 0px 0px 0px;
+}
+.explore_more:hover{ /* style to activate a state when you hover on quote button */
+    background-color: var(--footer_color);
+    border: none;
+}
+/* style for div with pic in header */
+.header_photo{
+    background-image: url("../../images/profile.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:30px 0px 0px 0px;
+}
+.medicine_care--banner{ /* style for div 0ntop of  pic in header */
+     background-color: rgba(0, 147, 137, 0.651); 
+     height: 600px;
+     color: var(--principal_color);
+ 
+}
+.medicine_care--banner .writings{ /* style for div holding the h1, h3 and button */
+    padding:100px 0px 0px 85px;
+}
+.medicine_care--banner h1{ /* style for the h1 in the banner */
+    font-size: 120px
+}
+.medicine_care--banner h3{ /* style for the h3 in banner */
+    font-size: 25px
+}
+/* end of style  for header */
+
+/* start of style  for main */
+.container{
+
+}
+.section_one{
+    background-color: var(--principal_color); /* style for the first section after the header */
+    width: 80%;
+    margin-left:9%;
+}
+.medcare_medequip{ /* style for the two identical divs in the section one */
+    color: var(--footer_color);
+    background-color: rgb(216, 208, 208);
+    height: 50vh;
+}
+.docmedcare{ /* style for div holding 3 divs in the section one */
+    display: flex;
+}
+.doctor_services_photo{
+    background-image: url(../../images/stethoscope2.png);
+}
+.doctor_services{ /* style for the  div with purple background in the section one */
+    background-color: #0e204d;
+    color: var(--principal_color);
+    height: 50vh;
+    padding: 80px 0px 0px 0px;
+}
+.fa-stethoscope{
+    color:var(--primary_color);
+    font-size: 90px;
+}
+.read_more{ /* style for the read more button in middle div of section one */
+    border: none;
+    border-radius: 50px;
+    background-color: var(--primary_color);
+    font-size: 20px;
+    padding: 10px;
+    color: var(--principal_color);
+    /* margin:20px 0px 0px 0px; */
+}
+.read_more--medcare{ /* style for button in the identical  divs in the section one */
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 10px;
+    color: var(--principal_color);
+}
+.read_more--medcare:hover{ /* hover style for the read more button in identical divs */
+    background-color: var(--primary_color);
+}
+
+/* start of style  for section two */
+.section_two{ /* style to set top margin for section two */
+    margin:50px 0px 0px 0px;
+}
+.section-two-container{ /* style to display contents of section two */
+    display:flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left:9%;
+}
+.pharmacare-doccare{
+    display:flex;
+    justify-content:space-between;
+}
+.learn-more{
+    border: none;
+    border-radius: 50px;
+    background-color: var(--footer_color);
+    font-size: 20px;
+    padding: 10px;
+    color: var(--principal_color);
+}
+.learn-more:hover{
+    background-color: var(--primary_color);
+}
+/* end of style  for section two */
+
+/* start of style  for section Three */
+.section_three{
+    background-color: #f3f5f8;
+}
+.section-three-container{
+    width: 85%;
+    margin-left:7.5%;
+}
+.background_gray--relative{
+    position:relative;
+    width:82%;
+    margin-left: 9%;
+    height:10vh;
+    background-color: #4d658123;
+
+}
+.devcaco-absolute{
+    position:absolute;
+    width: 920px;
+    display:grid;
+    grid-template-columns:auto auto auto auto auto;
+    background-color: var(--color-grey);
+    height:15vh;
+    margin:0px 9px 0px 9px;
+    top: 10%;
+    /* z-index: 2; */
+}
+.devcaco-list{
+    margin:0px 0px 0px 70px;
+}
+.eye-care{
+    width: 40px;
+    height: 40px;
+}
+.eye-care img{
+    width: 40px;
+    height: 40px;
+}
+/* end of style  for section three */
+
+/* start of style  for section four */
+/* end of style  for section four */
+
+/* start of style  for section five */
+/* end of style  for section five */
+
+/* start of style  for section six */
+/* end of style  for section six */
+
+/* start of style  for section seven */
+/* end of style  for section seven */
